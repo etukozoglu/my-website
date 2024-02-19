@@ -1,60 +1,33 @@
 .fixed-header {
-    position: fixed;
-    flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #333;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     font-family: Lato;
 }
 
 .profile-photo {
-    height: 110px;
-    width: 110px;
-    margin-right: 20px;
+    height: 90px;
+    width: 90px;
+    margin-right: 40px;
     border: 5px solid #fff;
     border-radius: 50%;
     background-repeat: no-repeat;
-    margin-bottom: 10px;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-photo img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 0.1px;
 }
 
-.profile-info h1 {
-    text-align: center;
-    margin: 0;
-    font-size: 24px;
-    color: #fff;
-    /* Couleur du texte blanc */
-}
-
-.profile-info p {
-    text-align: center;
-    margin: 5px 0;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 100px;
-    color: white;
-        /* Couleur d'animation */
-}
-
-.profile-info span {
-    margin: 5px 0;
-    font-weight: bold;
-    color: #fffd82;
+.profile-info {
+    display: none;
 }
 
 .navigation ul {
@@ -62,13 +35,13 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: raw;
     align-items: center;
+    justify-content: space-around;
 }
 
 .navigation li {
     margin-right: 20px;
-    margin-bottom: 20px;
 }
 
 .navigation a {
@@ -84,56 +57,84 @@
     /* Couleur d'animation */
 }
 
-.profile-info {
-    margin-bottom: 100px;
-}
-
 
 /* Styles pour les écrans de taille réduite */
 @media (max-width: 768px) {
     .fixed-header {
-      flex-direction: column;
-      align-items: center;
-      display: flex;
-      height:100vh;
-      width: 100vw;
-      margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 50px;
     }
-  
+
+    .profile-photo {
+        height: 150px;
+        width: 150px;
+        margin-right: 20px;
+        border: 5px solid #fff;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .profile-photo img {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 0.1px;
+    }
+
+    p.name {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #FFD700;
+        white-space: nowrap;
+    }
 
     .profile-info {
-      margin-top: 5px;
-      text-align: center;
+        margin-top: 20px;
+        text-align: center;
+        display: block;
+        color: white;
+        font-size: 22px;
+        margin-bottom: 40px;;
     }
 
 
-  .navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .navigation li {
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin: 10px 0;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: #fff;
+        /* Couleur du texte blanc */
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .navigation a:hover {
+        color: rgb(220, 53, 69);
+    }
+
 }
-
-.navigation li {
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin: 10px 0;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: #fff;
-    /* Couleur du texte blanc */
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.navigation a:hover {
-    color: rgb(220, 53, 69);}
-
-}
-
-
-

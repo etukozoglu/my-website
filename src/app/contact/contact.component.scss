@@ -1,7 +1,4 @@
 body {
-  margin-left: 300px;
-  margin-right: 100px;
-  padding-bottom: 3rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   ;
 }
@@ -88,4 +85,21 @@ h4 {
 
 .ui.red.button:hover {
   background-color: #c82333;
+}
+
+@media screen and (max-width: 768px) {
+/* Style pour le formulaire */
+.ui.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+h3 {
+  margin-top: 60px;
+}
+
 }

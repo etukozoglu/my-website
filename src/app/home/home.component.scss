@@ -6,13 +6,13 @@
 }
 
 body {
-    margin-left: 272px;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: #f7f7f7;
     font-size: 14px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /* Header styles */
@@ -20,9 +20,9 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-  }
+}
 
-  .header-image {
+.header-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -30,9 +30,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-  }
+}
 
-  .caroussel-content {
+.caroussel-content {
     position: relative;
     top: 50%;
     left: 50%;
@@ -41,8 +41,8 @@ body {
     z-index: 2;
     color: white;
     width: 100%;
-  }
-  
+}
+
 
 /* Skill cards styles */
 .skills_container__TvqaX {
@@ -51,9 +51,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-bottom: 40px;
     padding: 3rem;
-  }
-  
-  .card_card__2K3F4 {
+}
+
+.card_card__2K3F4 {
     height: 250px;
     text-align: center;
     display: flex;
@@ -63,11 +63,11 @@ body {
     background-color: #fff;
     border: 1px solid #d3d3d3;
     color: #000;
-  }
+}
 
 
 
-  /* Contact section styles */
+/* Contact section styles */
 .contact-me_container__1yzXi {
     font-size: 14px;
     line-height: 1.4285em;
@@ -79,16 +79,17 @@ body {
     background-attachment: fixed;
     background-position: 50%;
     color: #fff;
-  }
-  
-  .contact-me_workTogether {
+}
+
+.contact-me_workTogether {
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    text-align: center; /* Center the text on mobile */
-  }
-  
-  .button_container {
+    text-align: center;
+    /* Center the text on mobile */
+}
+
+.button_container {
     padding: 10px 20px;
     border-radius: 5px;
     min-height: 50px;
@@ -98,87 +99,91 @@ body {
     align-items: center;
     cursor: pointer;
     transition: color 0.3s ease;
-    text-align: center; /* Center the button on mobile */
-  }
-  
-  
-  h2,
-  h3,
-  h4,
-  h5 {
-      font-weight: 700;
-  }
-  
-  h2 {
-      font-size: 4rem;
-      color: #fff;
-      margin-bottom: 10px;
-  }
-  
-  h3 {
-      font-size: 2.5rem;
-      color: rgba(0, 0, 0, .87);
-      margin-bottom: 10px;
-  }
-  
-  h4 {
-      font-size: 2rem;
-      color: rgba(0, 0, 0, .87);
-      margin-bottom: 10px;
-      margin-top: 40px;
-  }
-  
-  p {
-      font-size: 1rem;
-      color: #dc3545;
-      font-weight: 700;
-      margin-bottom: 20px;
-  }
-  
-  .subtitle1 {
-      font-size: 1rem;
-      color: #dc3545;
-      font-weight: 700;
-      margin-bottom: 20px;
-  }
-  
-  
-  
-  .dynamic-text {
-      color: white;
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 10px;
-      /* Ajouter un espace entre les rôles */
-  }
-  
-  .dynamic-role {
-      display: inline-block;
-  
-  }
-  
-  .section_container__2NVtm {
-      padding: 3rem;
-  }
-  
-  
-  .card_card__2K3F4 .card_icon__3ACDG img {
-      width: 130px;
-      height: 130px;
-  }
-  
-  
-  
-  
-  .contact-me_container__1yzXi .contact-me_bg__1j2pk {
-      padding: 5rem 0;
-      display: flex;
-      justify-content: space-around;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, .8);
-      box-sizing: content-box;
-  }
+    text-align: center;
+    /* Center the button on mobile */
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, .87);
+    margin-bottom: 10px;
+    margin-left: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .87);
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 1rem;
+    color: #dc3545;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 3rem;
+}
+
+.subtitle1 {
+    font-size: 1rem;
+    color: #dc3545;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+
+.dynamic-text {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    /* Ajouter un espace entre les rôles */
+}
+
+.dynamic-role {
+    display: inline-block;
+
+}
+
+.section_container__2NVtm {
+    padding: 3rem;
+    width: 100%;
+}
+
+
+.card_card__2K3F4 .card_icon__3ACDG img {
+    width: 130px;
+    height: 130px;
+}
+
+
+
+
+.contact-me_container__1yzXi .contact-me_bg__1j2pk {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    box-sizing: content-box;
+}
 
 
 /* Styles for mobile */
@@ -188,15 +193,19 @@ body {
     body {
         flex-direction: column;
         align-items: center;
-        margin:0;
+        margin: 0;
         width: 100%;
     }
 
     /* Centrer le nav-bar */
     .nav-bar {
-        flex-direction: column; /* Empiler les éléments en colonne */
-        align-items: flex-start; /* Aligner à gauche */
-        padding: 10px; /* Ajuster l'espacement */    }
+        flex-direction: column;
+        /* Empiler les éléments en colonne */
+        align-items: flex-start;
+        /* Aligner à gauche */
+        padding: 10px;
+        /* Ajuster l'espacement */
+    }
 
     /* Redimensionner le header */
     .app-header {
