@@ -29,7 +29,7 @@ import { RealisationDetailsComponent } from './realisation-details/realisation-d
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

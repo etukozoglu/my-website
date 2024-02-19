@@ -1,9 +1,5 @@
-
 body {
-    margin-left: 272px;
-    background-color:#f7f7f7;
-    margin-left: 272px; /* Garder la marge gauche pour le menu latéral */
-    width: calc(100% - 272px); /* Ajuster la largeur du contenu */
+    background-color: #f7f7f7;
 }
 
 
@@ -37,14 +33,10 @@ h6 {
 
 /* Styles pour la section container */
 .section_container__2NVtm {
-    padding: 3rem;
+     padding: 3rem;
+
 }
 
-/* Styles pour le titre de la section */
-.section_container__2NVtm h4 {
-    font-size: 24px;
-    margin: 0;
-}
 
 /* Styles pour le sous-titre de la section */
 .section_container__2NVtm p {
@@ -56,13 +48,13 @@ h6 {
     display: grid;
     grid-gap: 32px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-bottom: 40px;
     padding: 3rem;
 }
 
 
 .card_title__3Y-6- {
-    margin-bottom: 15px; /* Espacement entre le titre et le haut de la carte */
+    margin-bottom: 15px;
+    /* Espacement entre le titre et le haut de la carte */
     font-size: 24px;
     text-align: center;
 }
@@ -153,13 +145,13 @@ ul {
     list-style: none;
     text-align: left;
 
-  }
-  
-  ul li:before {
-    content: '✓ ';
-  }
+}
 
-  .portfolio_grid__2-4kd {
+ul li:before {
+    content: '✓ ';
+}
+
+.portfolio_grid__2-4kd {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -168,7 +160,7 @@ ul {
     background-color: #fff;
     border: 1px solid #d3d3d3;
     color: #000;
-  }
+}
 
 /* Styles for mobile */
 @media (max-width: 768px) {
@@ -180,10 +172,14 @@ ul {
 
     /* Réorganiser le contenu de la section de portefolio */
     #projectSection {
-        grid-template-columns: 1fr; /* Afficher une seule colonne */
-        grid-gap: 20px; /* Réduire l'espace entre les cartes */
-        padding: 1rem; /* Réduire le padding */
-        margin-bottom: 20px; /* Réduire la marge inférieure */
+        grid-template-columns: 1fr;
+        /* Afficher une seule colonne */
+        grid-gap: 20px;
+        /* Réduire l'espace entre les cartes */
+        padding: 1rem;
+        /* Réduire le padding */
+        margin-bottom: 20px;
+        /* Réduire la marge inférieure */
     }
 
     /* Centrer les titres et sous-titres */
@@ -195,20 +191,25 @@ ul {
     /* Ajuster la taille des titres */
     .card_title__3Y-6- {
         font-size: 20px;
-        margin-bottom: 10px; /* Ajouter un espace entre le titre et le haut de la carte */
+        margin-bottom: 10px;
+        /* Ajouter un espace entre le titre et le haut de la carte */
     }
 
     h5 {
         font-size: 1.2rem;
-        margin-top: 20px; /* Réduire l'espace au-dessus du titre */
-        margin-bottom: 10px; /* Ajouter un espace en dessous du titre */
+        margin-top: 20px;
+        /* Réduire l'espace au-dessus du titre */
+        margin-bottom: 10px;
+        /* Ajouter un espace en dessous du titre */
     }
 
     /* Centrer les cartes et leur contenu */
     .portfolio_card__CpuOu,
     .portfolio_grid__2-4kd {
-        margin: 0 auto; /* Centrer horizontalement */
-        text-align: center; /* Centrer le contenu */
+        margin: 0 auto;
+        /* Centrer horizontalement */
+        text-align: center;
+        /* Centrer le contenu */
     }
 
     /* Ajuster la taille de l'image */
